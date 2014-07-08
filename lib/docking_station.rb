@@ -7,7 +7,7 @@ DEFAULT_CAPACITY=10
 		@bikes = []
 	end
 
-	
+
 	def bike_count
 		@bikes.count
 	end
@@ -25,5 +25,8 @@ DEFAULT_CAPACITY=10
 		bike_count == @capacity
 	end
 
+	def available_bikes
+		@bikes.reject {|bike|bike.broken?}
+	end
 end
 

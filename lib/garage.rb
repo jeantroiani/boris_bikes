@@ -1,23 +1,16 @@
 require_relative 'bike_container'
 
-	class Garage
+class Garage
 
-		include BikeContainer
+	include BikeContainer
 
-			def initialize(option={})
-				self.capacity=(option.fetch(:capacity,capacity))
-			
-			end
-
-
-
-			def fix(group_bikes)
-				group_bikes.each{|bike| bike.fix! }
-			end
-
-
-
-
-
+	def initialize(option={})
+		self.capacity=(option.fetch(:capacity,capacity))
 	end
+
+	def fix(group_bikes)
+		group_bikes.each{|bike| bike.fix! }
+	end
+
+end
 

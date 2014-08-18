@@ -15,7 +15,4 @@ describe Garage do
 		expect(storage.bikes).to eq storage.available_bikes
 	end
 
-
-
-
 end

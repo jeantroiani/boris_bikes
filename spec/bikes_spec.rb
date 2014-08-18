@@ -15,12 +15,10 @@ describe Bike do
 		expect(bike).to be_broken
 	end
 
-	it'should get fix' do
-		
+	it'should get fix' do		
 		bike.break!
 		bike.fix!
 		expect(bike).not_to be_broken
 	end
-
 
 end
